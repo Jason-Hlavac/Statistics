@@ -17,8 +17,9 @@ def pullEmail():
         completeList.append(num)
         return(sheet.cell(row =num, column=4).value)
     elif(num in completeList):
-        pullEmail()
+        return(pullEmail())
     else:
+        print(num)
         print("An Error occured in the pullEmail() function. Passing")
         pass
 
